@@ -1,0 +1,33 @@
+
+#duck-animation {
+    display: block;
+    margin: 0 auto;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+
+/* Add confetti animation */
+#duck-animation.confetti::after {
+    content: "duck.gif";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: "duck.gif";
+    background-size: contain;
+    background-repeat: repeat;
+    animation: confetti 0.5s ease-in-out;
+}
+
+@keyframes confetti {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+

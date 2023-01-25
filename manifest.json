@@ -1,13 +1,17 @@
 {
   "name": "Rate My Professor Lookup",
   "description": "Looks up a Professor's RMP profile with one click",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "permissions": ["contextMenus"],
   "background": {
     "service_worker": "lookup.js",
     "type": "module"
   },
+"action": {
+    "default_popup": "popup.html"
+  },
+
   "icons": {
    "16": "rmp16.png",
    "48": "rmp48.png",
